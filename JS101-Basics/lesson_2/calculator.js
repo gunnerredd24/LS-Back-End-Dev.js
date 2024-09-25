@@ -45,28 +45,29 @@ while (!['1' , '2' , '3' , '4'].includes(operation)) {
   operation = READLINE.question();
 }
 
-let output;
 
 switch (operation) {
   case '1':
-    output = Number(number1) + Number(number2);
+    prompt(`The result of ${number1} + ${number2} is ${Number(number1) + Number(number2)}`);
     break;
   case '2':
-    output = Number(number1) - Number(number2);
+    prompt(`The result of ${number1} - ${number2} is ${Number(number1) - Number(number2)}`)
     break;
   case '3':
-    output = Number(number1) * Number(number2);
+    prompt(`The result of ${number1} * ${number2} is ${Number(number1) * Number(number2)}`)
     break;
   case '4':
-    output = Number(number1) / Number(number2);
+    prompt(`The result of ${number1} / ${number2} is ${Number(number1) / Number(number2)}`)
     break;
 }
-
-prompt(`The result is ${output}`);
 
 prompt(msgObject.Another)
 again = READLINE.question().toLowerCase();
+
+console.log('\x1Bc'); // This command will clear the console when running node.js (On most terminals)
 }
+
+
 
 while(!['y' , 'n'].includes(again)) {
   prompt(msgObject.AnotherCheck);
