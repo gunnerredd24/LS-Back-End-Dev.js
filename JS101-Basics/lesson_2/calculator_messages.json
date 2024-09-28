@@ -1,8 +1,8 @@
-{"Welcome" : "Welcome to the Calculator!",
-"FirstNumber" : "What is your first number?",
-"ValidNumber" : "Hmmm... that doesn't look like a valid number",
-"SecondNumber" : "What is the second number?",
-"Operation" : "What is the operation you would like to perform on these numbers?\n1) add 2) subtract 3) multiply 4) divide",
-"OperationCheck" : "Must choose 1 , 2 , 3 , 4",
-"Another" : "Would you like to do another calculation? ( y or n )\n",
-"AnotherCheck" : "Must choose y or n"}
+{"welcome" : "Welcome to the Calculator!",
+"firstNumber" : "What is your first number?",
+"validNumber" : "Hmmm... that doesn't look like a valid number",
+"secondNumber" : "What is the second number?",
+"operation" : "What is the operation you would like to perform on these numbers?\n1) add 2) subtract 3) multiply 4) divide",
+"operationCheck" : "Must choose 1 , 2 , 3 , 4",
+"another" : "Would you like to do another calculation? ( y or n )\n",
+"anotherCheck" : "Must choose y or n"}
