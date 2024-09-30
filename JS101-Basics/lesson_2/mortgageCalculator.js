@@ -40,8 +40,6 @@ while (invalidNumber(loanDuration)) {
   loanDuration = READLINE.question();
 }
 
-console.log(loanDuration);
+let monthlyInterestRate = annualPercentageRate / 12;
 
-console.log(annualPercentageRate);
-
-console.log(loanTotal);
+console.log(typeof(annualPercentageRate));
