@@ -1,0 +1,10 @@
+Function Guidelines
+-When using functions each function should be limited to one action and should be about 10 lines or less. (if it is 15 lines, you should consider splitting your function into 2 or more functions.)
+-An action can either be a return of a useful value, or a side effect.
+-When we say "useful value" we are talking about a value that has meaning to the calling code.
+-Side effects you can use in your coding are,
+1. reassigns any non-local variable
+2. mutates the value of any object refereenced by a non-local variable
+3. reads from or write to a file, network connection, browser, or the system hardware.(Side effects like this include writing to the console log and reading input from the terminal.)
+4. raises an exception without handling it.
+5. It calls another function that has side effects.

@@ -1,0 +1,60 @@
+-GLOBAL SCOPE can be accessed anywhere in your program.
+-LOCAL SCOPE comes down to FUNCTION SCOPE and LOCAL SCOPE.
+
+FUNCTION SCOPE: 
+function scope can be defined as inner scope. Nested functions define nested scopes.
+1. Outer scope variables can be accessed by the inner scope.
+
+2. Inner scope variables cannot be accessed in the outer scope.
+-A variable inside of inner scope is only defining its scope. Once you call the function that is when the variable actually becomes available to be accessed.
+
+3. Peer scopes do not conflict.
+-If you have two functions with the same variable names defined inside their separate scopes it will not raise an error. 
+-If you have a function that defines a variable and then try to reference that variable from a different function/scope, it will raise a reference error because they are separate local scopes.
+
+4. Nested functions have their own variable scope.
+-The scope of nested functions can be referred to as levels.
+Ex. START 
+let a = 1; // first level variable
+
+function foo() {
+  // second level
+  let b = 2;
+
+  function bar() {
+    // third level
+    let c = 3;
+    console.log(a); // => 1
+    console.log(b); // => 2
+    console.log(c); // => 3
+  }
+  // Back to second level
+  bar();
+
+  console.log(a); // => 1
+  console.log(b); // => 2
+  console.log(c); // => ReferenceError
+}
+
+foo();
+EX. END
+-In this example, the second level cannot access the variable defined in the third level.
+
+5. inner scope variables can shadow outer scope variables
+-In any nested code, the inner variables will take precedence over the outer variables.
+Ex. START
+let a = 1;
+
+function doit(a) {
+  console.log(a); // => 3
+}
+doit(3);
+console.log(a); // => 1
+EX. END
+-In this example, the parameter takes the arguement input 3 over the variable value that is 1. This is how shadowing works.
+
+BLOCK SCOPE:
+-Blocks are segments of one or more statements and expressions grouped by opening and closing curly braces ({}).
+*Note* not all code in curly braces are blocks or function bodies. They could also be object literals or class definitions.
+There are also subtle differences between blocks and function bodies.
+-

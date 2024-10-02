@@ -11,4 +11,4 @@ switch (tier) {
     break;
 }
 
-console.log(tier = bow);
+console.log(bow);
