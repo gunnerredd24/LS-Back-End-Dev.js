@@ -1,0 +1,2 @@
+Pass-by-Value: When you use a variable to pass an argument to a function, the function can't do
+anything that sets the original variable to a different value.
