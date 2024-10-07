@@ -1,0 +1,29 @@
+Q1: 
+-It will log 'Hello' to the console. This is because
+primitive values cannot be mutated.
+
+Q2: 
+-It will log
+'Hello'
+'Hello'
+'Hello'
+This is because again you cannot mutate a primitive value.
+The other actions give back other return values, but we
+don't do anything with them.
+
+Q3:
+-It will log to the console
+['Hello' , 'Goodbye']
+This is because .push is a mutating method for arrays
+and it mutated it to add 'Goodbye' as an elemen
+into the end of the array. And arrays are objects.
+
+Q4:
+-It will log ['Hello']. This is because we are dealing with
+an array which is an object, but we use a method that does not mutate and rather one that just returns another array.
+
+Q5: 
+-It will log ['Hello']. This is because we are dealing with an array but the method is called only on the primtive value within the array and primtive values are nonmutatable. The method rather returns a new string and then we do nothing with that.
+
+Q6:
+- It will log ['HELLO'] to the console. This is because we are essentially reassigning the primitive value that is at element 0 in the array to an uppercase version of it.

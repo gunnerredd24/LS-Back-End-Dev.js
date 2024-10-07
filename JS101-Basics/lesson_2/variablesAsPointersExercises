@@ -1,0 +1,37 @@
+Q1:
+-It will log to the console 'Hello' and 'Hello'.
+This is because myWord is assigned to 'Hello' and 
+myOtherWord is assigned to the pointer/variable myWord.
+
+Q2:
+-It will log 'Goodbye' and 'Hello'. This is because
+myWord get declared and assigned to 'Hello'. Then 
+myOtherWord gets declared and assigned to myWord. But
+myWord then gets reassigned to 'Goodbye'.
+
+Q3:
+-It will log ['Hi', 'Goodbye'] and ['Hi', 'Goodbye'].
+This is because myWords gets declared and assigned to 
+['Hello', 'Goodbye']. Then myOtherWords gets assigned to myWords.
+But myWords[0] gets reassigned to 'Hi', thus mutating myWords and 
+this also mutates the value myOtherWords was pointing at as well,
+because they are pointing at the same array.
+
+Q4:
+-It will log ['Hi', 'Goodbye'] and ['Hello', 'Goodbye'].
+This is because they are both orignally pointing at the same array and
+the same value in memory, but then myWords the pointer/variable gets reassigned
+to point at a different array/value.
+
+Q5:
+- It will log ['Hi', 'Goodbye'] and 'Hello'. This is
+because myWords gets declared and assigned to ['Hello', 'Goodbye'].
+Then myWord gets declared and assigned to the first element of myWords ('Hello').
+Then the first element of myWords gets mutated/reassgined to the string 'Hi'.
+
+Q6:
+-It will log ['Hi', 'Goodbye'] and 'Hello' this is because 
+mywords gets declared and assigned to ['Hello', 'Goodbye'].
+Then myWord gets declared and assigned to 'Hi'. Then
+myWords first element gets reassigned to the value at myWord ('Hi').
+Then myWord gets reassigned to 'Hello'.
