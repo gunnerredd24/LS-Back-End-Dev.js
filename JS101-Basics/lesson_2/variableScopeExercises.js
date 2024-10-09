@@ -21,4 +21,4 @@
 // the block scope gets declared and assigned to 5 and then that num gets 1 added to it which is then 6. THen it exits the loop and loogs num to the console, but because the num that = 6 is
 // limited to the block scope it will not be used to log to the console. instead the globally scoped variable num will which is still.
 
-// This will actually log nothing ot the console, because everything I said was right except that the num variable in the loop statement never changes therefore staying in an infinite loop.
+// ^This will actually log nothing ot the console, because everything I said was right except that the num variable in the loop statement never changes therefore staying in an infinite loop.
