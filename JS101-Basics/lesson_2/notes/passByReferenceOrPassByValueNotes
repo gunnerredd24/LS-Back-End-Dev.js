@@ -1,2 +1,16 @@
 Pass-by-Value: When you use a variable to pass an argument to a function, the function can't do
 anything that sets the original variable to a different value.
+
+Pass-by-Reference: When you pass by the reference of a variable itself. This essentially allows the original variable to be mutated. This happens when you pass any object to a function. Because an object can and maybe mutated in a function, it always has to pass by reference. While primitive values are always pass by value, because they cannot have the original value mutated or changed from the function.
+
+**When an operation within the function mutates its argument, it affects the original object.**
+
+Methods that can mutate objects are considered destructive operations. To fully know what methods mutate and which ones do not, I must read MDN documentation and I must know by trial and error.
+
+When mutating an object that is referred to by two variables, it will change the value of both variables because both objects point to the same object in memory.
+
+While if you have a primitive value and you assign it the same value, they have the same value but they do not point to the same place in memory. So if you do a resassignment of 1 value it will change it only for that one and not the other.
+
+**Pass-by-Value and Pass-by-Reference only are terms that only apply when calling and returning functions, not when assigning and reassigning variables**
+
+In order to use the value in a function we must remember to set a return value. otherwise it will return undefined.

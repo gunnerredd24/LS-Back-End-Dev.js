@@ -1,7 +1,5 @@
 function changeName(name) {
-  console.log(name);
   name = "bob"; // does this reassignment change the variable outside the function?
-  return name;
 }
 
 function anotherFunction() {
@@ -10,7 +8,12 @@ function anotherFunction() {
   console.log(name); // => logs 'jim'
 }
 
-let gName = 'Gilbert';
-
 anotherFunction();
-console.log(changeName(gName));
+
+function capitalize(names) {
+  return names.map(name => name[0].toUpperCase() + name.slice(1));
+}
+
+let names = ["chris", "kevin", "naveed"];
+capitalize(names); // returns ['Chris', 'Kevin', 'Naveed']
+console.log(names); // => ['chris', 'kevin', 'naveed']
