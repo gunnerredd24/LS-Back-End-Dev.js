@@ -1,0 +1,19 @@
+Use blank spaces almost as if you are writing an essay organizing them into paragraphs.
+
+Function Naming: It is good to name functions with exactly what they do.
+For example- If your function is displaying or printing to the console. You can do displayTotal or printTotal.
+
+functions should only do one of these things:
+1. Mutate a value.
+2. Output something.
+3. return a meaningful value.
+
+Iterating...
+When iterating through an object always make sure you do not mutate the caller while iterating through the object. It can result in unexpected iteration and unexpected results to the caller. overall it can get complicated so do not do it.
+
+1. Use an underscore to represent unused callback parameters. This shows that you do not care about the particular callback parameter.
+2. With multiple parameters, you can show that you do not need the first one but need the second parameter.
+
+Final Note: 
+1. Don't be afraid to struggle, struggling is how you learn why certain strategies are better in certain situations. Instead of memorizing bullet points you can learn through trial and error, and have these strategies stick with you.
+2. Don't spend so much time debugging, if you really learn the better practices you will not have to spend as much time debugging.s
