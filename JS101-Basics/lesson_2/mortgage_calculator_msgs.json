@@ -1,8 +1,9 @@
 {"welcome" : "Welcome to the Mortgage Calculator!",
 "loanAmount" : "What is your loan amount?",
 "validInput" : "Hmmm... that doesn't look like a valid input.",
-"APR" : "What is the APR (Annual Percentage Rate)\n(Please enter as a whole integer, not a decimal)?",
+"APR" : "What is the APR (Annual Percentage Rate)\n(Please enter as a percentage without the percent sign)?",
+"APRExample" : "Example: 5% would be 5 and 2.5% would be 2.5.",
 "APRCheck" : "Hmmm... that doesn't look like a valid input for an APR.",
-"loanDuration" : "What is the duration of your loan? (Please Enter in Months.)\n",
+"loanDuration" : "What is the duration of your loan? (Please Enter in years.)\n",
 "loanDurationCheck" : "Hmmm... that doesn't look like a valid input for a loan duration."
 }
