@@ -37,4 +37,18 @@ flintstones.push(["Bambam", "Pebbles"]);
 flintstones = flintstones.reduce((accum, element) => {
   return accum.concat(element);
 }, []);
+// let newFlintstones = flintstones.flat();
+// console.log(newFlintstones);
 console.log(flintstones);
+**
+//Q7: 
+let fllintstones = { Fred: 0, Wilma: 1, Barney: 2, Betty: 3, Bambam: 4, Pebbles: 5 };
+console.log(Object.entries(fllintstones).filter(pair => pair[0] === "Barney").shift());
+**
+//Q8:
+numbers = [1, 2, 3, 4]; // true
+let table = { field1: 1, field2: 2, field3: 3, field4: 4 }; // false
+console.log(Array.isArray(numbers));
+console.log(Array.isArray(table));
+
+//Q9:
