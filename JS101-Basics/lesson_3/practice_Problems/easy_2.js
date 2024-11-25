@@ -40,11 +40,11 @@ flintstones = flintstones.reduce((accum, element) => {
 // let newFlintstones = flintstones.flat();
 // console.log(newFlintstones);
 console.log(flintstones);
-**
+//**
 //Q7: 
 let fllintstones = { Fred: 0, Wilma: 1, Barney: 2, Betty: 3, Bambam: 4, Pebbles: 5 };
 console.log(Object.entries(fllintstones).filter(pair => pair[0] === "Barney").shift());
-**
+//**
 //Q8:
 numbers = [1, 2, 3, 4]; // true
 let table = { field1: 1, field2: 2, field3: 3, field4: 4 }; // false
@@ -52,3 +52,13 @@ console.log(Array.isArray(numbers));
 console.log(Array.isArray(table));
 
 //Q9:
+let title = "Flintstone Family Members";
+let padding = Math.floor((40 - title.length) / 2);
+title.padStart(padding + title.length).length;
+
+//Q10:
+let statement1 = "The Flintstones Rock!";
+let statement2 = "Easy come, easy go.";
+
+console.log(statement1.split(' ').filter(element => element === 't').length);
+statement2.split(' ').filter(element => element === 't').length;

@@ -13,3 +13,7 @@ it mutates it and actually changes it outside of the function. and before this h
 Q5: It will log ['Hello', 'Goodbye'] twice. this is because on line 2 we log the declared value of myWords and then it trys to reassign the entire array of myWords,
 but it does not return the value and reassigning works differently than mutating. thus it logs the same thing twice.
 */
+
+const isColorValid = color => ["blue", "green"].includes(color);
+console.log(isColorValid("blue"));
+console.log(isColorValid("red"));
