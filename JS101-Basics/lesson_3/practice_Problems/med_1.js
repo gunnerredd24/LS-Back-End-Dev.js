@@ -38,4 +38,32 @@ function factors(number) {
 
 //Q5: 
 // 0.9
-// 0.3
+// 0.89999
+
+//Q6: 
+// It will log false.
+// You can use Number.isNaN() method to more reliably see if a value is NaN.
+
+//Q7:
+// It will log 34.
+
+//Q8: 
+// yes, it will ransack the families data. Pass by reference is what causes the families data to be changed throughout the object.
+
+//Q9:
+function rps(fist1, fist2) {
+  if (fist1 === "rock") {
+    return fist2 === "paper" ? "paper" : "rock";
+  } else if (fist1 === "paper") {
+    return fist2 === "scissors" ? "scissors" : "paper";
+  } else {
+    return fist2 === "rock" ? "rock" : "scissors";
+  }
+}
+
+console.log(rps(rps(rps("rock", "paper"), rps("rock", "scissors")), "rock"));
+
+// It logs "paper".
+
+//Q10:
+// "no".

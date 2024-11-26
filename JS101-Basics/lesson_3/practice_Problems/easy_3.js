@@ -14,7 +14,7 @@ console.log(numbers);
 
 // Q4: it will log [{ first: "value1" }, { second: "value2" }, 3, 4, 5];
 
-Q5: 
+// Q5: 
 
 // function isColorValid(color) {
 //   return color === "blue" || color === "green";
@@ -26,3 +26,17 @@ Q5:
 const isColorValid = color => ["blue", "green"].includes(color);
 console.log(isColorValid("blue"));
 console.log(isColorValid("red"));
+
+// Q6:
+
+let arr = [1, 2, 3]; // arr = object/variable, pv = 1, 2, 3
+let newArr = arr; // newArr = object/variable
+
+const num = arr[0]; // num = primtive value/variable, 0 = primtive value
+let newNum = num; // newNum = primitive value/variable
+
+function double(num) { // num = primitive value/variable, double = variable
+  return num * 2; // 2 == primitve value num == variable/pv
+}
+
+double(newNum); // variable and primtive value.

@@ -1,0 +1,76 @@
+  - Naming conventions:
+Legal: is a naming conventions that the system of java allows you to use but are not always ideal for following a specific style guide.
+Idiomatic: is a naming conventions that are the style guide that you should be following strictly in order to make code easier to maintain and more readable for you and others.
+Non-Idiomatic: is a naming convention that still follows the legal part of things that allows you to use it in the system. But it is not as good again for readablility and maintainablity and collaboration.
+Illegal: naming convention is one that the system will not allow you to use no matter what.
+
+    - Primitive Values vs Objects:
+  Primitive values are only Numbers, Strings, booleans, undefined, null and NaN. 
+Primitive values are pass by value, when passing to a function. This means that they pass the actual value itself to the function and not the variable as a pointer. This also means that it cannot be mutated.
+  Objects can be arrays, object literals, object functions.
+Objects are pass by reference. This means that when these get passed as an arguement to a function. It will pass the reference to the variable itself rather than the value. This also means that anything in the function that mutates the variable in the function. It will also mutate the variable that was passed from the callback. This is because they both refer to the same exact value in memory.
+
+    -Type coercions: First off type coercion is the conversion of one type of value into another.(ex. String coerced into a number.)
+  Explicit: This is when you explicity or intentionally coerce a value into another intended value. Using a bulit in function and operator to coerce.
+
+  Implicit: This is when you perform an operation on two different value types and JS coerces the values to the same type. The type will vary depending on the two types involved and the original expression. This is generally considered to be a poor desgin decisons now. Because of the implicit coercering from using the non strict equality operation on two different data types it is heavily encouraged to use the strict equality symbol.
+
+EX.
+1. When a number is compared with a string using ==, the string is coerced into a number.
+2. When a boolean is compared with any other value, it is coerced into a number and compared again using the == operator.
+3. When an object is compared with a primtive value, the object is coerced into a primitive value and compared again using the == operator.
+4. A == comparison of undefined with null evaluates as true.
+
+  -Truthiness: every value evaluates as truthy, except...
+F- False
+U- Undefined
+N- Null
+0- Zero
+N- NaN
+E- Empty String ('')
+
+  -template literals:
+`These are literals with backstick characters at the front and end. This allows for multiline strings and string interpolation with embedded expressions $(var)`
+
+  -Object syntax:
+Object = {name: {key: value, key1: value1}, key: value2, key1: value3};
+
+  -Array syntax:
+Array = [1, 2, 3, 4, [5, 6, {key: value}], 8];
+
+  -Booleans vs truthiness:
+Booleans are definitive truths or falses. It can be 10 === 10 or 10 >= 10.
+
+Truthiness can be any value that isn't part of the acronym FUN0NE(false, undefined, null, zero, NaN, empty string).
+So if you are using a ternary operator and you need something to return if it is truthy and something if it is falsy. you could use...
+EX.
+let var = 10;
+var(returns truthy) ? true : false
+
+Object methods. There are quite a few and can be found in mdn java. I know of object.keys() which will return an array of all the keys in a given object. or object.values() which will give all the values in an array of a given object.
+
+  -Operator precedence
+A set of rules that dictate what operands a operator takes a given time in the program.
+highest precedence 
+()
+.
+[]
+++ -- (postfix increment/decrement)
++ - ! ~
+* / % (multiplication/etc)
++ -   (addtion/subtraction)
+<, <=, >, >=, instanceof (relational Operators)
+== != (Equality Operators)
+&     (Bitwise and)
+^     (Bitwise XOR)
+|     (Bitwise OR)
+&&
+||
+?:    (ternary operator)
+= += -=(assignment operators)
+
+**Always use paraenthesis when confused with precdence or to help clarify what you need to be highest precedence**
+
+  -Mutatiblity and nonmutatbility and const
+a constant cannot be reassigned. It can still be mutated tho. for example...
+An array that is defined as a constant cannot be assigned to a new array. but you can alter the arrays values and mutate them.
